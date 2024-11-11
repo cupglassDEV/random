@@ -143,7 +143,7 @@ export class Random {
       *
       * @param arr The array
       */
-    strictPickArray<T extends [unknown, unknown, unknown[]]>( arr:T ):T[number] {
+    strictPickArray<T extends [unknown, unknown, ...unknown[]]>( arr:T ):T[number] {
       if (arr.length<2) throw new ReferenceError("Random error: `strictPick` at least needs two elements from the array");
         return arr[ this.interger( 0, arr.length-1 ) ];
     }

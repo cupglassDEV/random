@@ -28,7 +28,11 @@ export const upperAlphaNumerics = `${upperAlphabets}${numbers}`;
 export const lowerAlphaNumerics = `${lowerAlphabets}${numbers}`;
 
 /** The reversed POSITION (not reversed characters) for Alpha Numerics */
-export const reversedPosition = {
+export const reversedPosition:{
+alphaNumerics:`${numbers}${alphabets}` as const,
+upperAlphaNumberics:`${numbers}${upperAlphabets}` as const,
+lowerAlphaNumberics:`${numbers}${lowerAlphabets}` as const
+} = {
     
 /** Reversed Alpha Numerics */
 alphaNumerics:`${numbers}${alphabets}` as const,
@@ -37,8 +41,10 @@ alphaNumerics:`${numbers}${alphabets}` as const,
 upperAlphaNumberics:`${numbers}${upperAlphabets}` as const,
     
 /** Reversed Lower Alpha Numerics */
-lowerAlphaNumberics:`${numbers}${lowerAlphabets}` as const,
+lowerAlphaNumberics:`${numbers}${lowerAlphabets}` as const
+ 
 }
+
 /** Random class */
 export class Random {
     

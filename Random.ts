@@ -10,7 +10,7 @@
 export const upperAlphabets:"ABCDEFGHIJKLMNOPQRSTUVWXTYZ" = "ABCDEFGHIJKLMNOPQRSTUVWXTYZ";
 
 /** Lower Alphabets */
-export const lowerAlphabets:"abcdefghijklmnopqrstuvwxtyz = "abcdefghijklmnopqrstuvwxtyz";
+export const lowerAlphabets:"abcdefghijklmnopqrstuvwxtyz" = "abcdefghijklmnopqrstuvwxtyz";
 
 /** Alphabets */
 export const alphabets:`${typeof lowerAlphabets}${typeof upperAlphabets}` = `${lowerAlphabets}${upperAlphabets}`;

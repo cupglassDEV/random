@@ -1,5 +1,5 @@
 {
- "name": "@cupglassdev/duckncup",
+ "name": "@cupglassdev/random",
  "publish":{
   "include":["README.MD", "LICENSE", "LICENSE.original", "Random.ts"]
  },

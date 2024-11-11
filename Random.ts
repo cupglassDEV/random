@@ -7,25 +7,25 @@
   */
 
 /** Upper Alphabets */
-export const upperAlphabets = "ABCDEFGHIJKLMNOPQRSTUVWXTYZ";
+export const upperAlphabets:"ABCDEFGHIJKLMNOPQRSTUVWXTYZ" = "ABCDEFGHIJKLMNOPQRSTUVWXTYZ";
 
 /** Lower Alphabets */
-export const lowerAlphabets = "abcdefghijklmnopqrstuvwxtyz";
+export const lowerAlphabets:"abcdefghijklmnopqrstuvwxtyz = "abcdefghijklmnopqrstuvwxtyz";
 
 /** Alphabets */
-export const alphabets = `${lowerAlphabets}${upperAlphabets}`;
+export const alphabets:`${typeof lowerAlphabets}${typeof upperAlphabets}` = `${lowerAlphabets}${upperAlphabets}`;
 
 /** Numbers */
-export const numbers = "0123456789";
+export const numbers:"0123456789" = "0123456789";
 
 /** Alpha Numerics */
-export const alphaNumerics = `${alphabets}${numbers}`;
+export const alphaNumerics:`${typeof alphabets}${typeof numbers}` = `${alphabets}${numbers}`;
 
 /** Upper Alpha Numerics */
-export const upperAlphaNumerics = `${upperAlphabets}${numbers}`;
+export const upperAlphaNumerics:`${typeof upperAlphabets}${typeof numbers}` = `${upperAlphabets}${numbers}`;
 
 /** Lower Alpha Numerics */
-export const lowerAlphaNumerics = `${lowerAlphabets}${numbers}`;
+export const lowerAlphaNumerics:`${typeof lowerAlphabets}${typeof numbers}` = `${lowerAlphabets}${numbers}`;
 
 /** The reversed POSITION (not reversed characters) for Alpha Numerics */
 export const reversedPosition:{

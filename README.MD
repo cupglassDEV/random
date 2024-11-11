@@ -1,3 +1,4 @@
+Always use the latest package, when the release version is still v0.9.x
 # Random - JSR/Deno package for Bun, Deno, Node, and more!
 
 The docs isnt actually complete, the package relies on both JSDoc and Typescript

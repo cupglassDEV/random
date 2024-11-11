@@ -16,3 +16,6 @@ for bun, install using
 ```shell
 $ bunx jsr add @cupglassdev/random
 ```
+
+## License
+This package is licensed with MIT ([LICENSE](./LICENSE)), For the original fork, go to ([LICENSE.original](./LICENSE.original))

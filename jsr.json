@@ -1,6 +1,6 @@
 {
  "name": "@cupglassdev/duckncup",
- "publish":{includes:["README.md", "LICENSE", "LICENSE.original"]},
+ "publish":{"include":["README.md", "LICENSE", "LICENSE.original"]},
  "exports":"./Random.ts",
  "version": "0.9.0"
 }

@@ -1,0 +1,36 @@
+name: Formatter
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@2
+        with:
+          deno-version: v2.x
+
+      - name: Verify formatting
+        run: deno fmt
+
+      - name: Run linter
+        run: deno lint
+
+      - name: Commit
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Random agent: Formatter"
+          git add .
+          git commit -m "Format doc"
+          git push
+
+      -

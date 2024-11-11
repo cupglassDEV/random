@@ -165,7 +165,7 @@ export class Random {
      * 
      * @param arr The arguments
      */
-    weightedArray<T extends number[]>( arr:number[] ):T[number]|undefined {
+    weightedArray<T extends number[]>( arr:T ):T[number]|undefined {
       const totalWeight = arr.reduce((acc, weight) => acc + weight, 0);
 
       if (totalWeight === 0) return;
@@ -190,7 +190,7 @@ export class Random {
      * 
      * @param arr The array
      */
-    strictWeightedArray<T extends number[]>(arr:number[]):T[number]{
+    strictWeightedArray<T extends number[]>(arr:T):T[number]{
       const res = this.weightedArray<T>(arr)
       if (!res) throw new ReferenceError("Random error: Total weight cannot be zero");
       return res
@@ -202,7 +202,7 @@ export class Random {
      * 
      * @param args The arguments
      */
-    weighted<T extends number[]>(...args:number[]):T[number]|undefined{
+    weighted<T extends number[]>(...args:T):T[number]|undefined{
       return this.weightedArray<T>(args)
     }
     /** 
@@ -210,7 +210,7 @@ export class Random {
      * 
      * @param args The arguments
      */
-    strictWeighted<T extends number[]>(...args:number[]):T[number]{
+    strictWeighted<T extends number[]>(...args:T):T[number]{
       const res = this.weightedArray<T>(args)
       if (!res) throw new ReferenceError("Random error: Total weight cannot be zero");
       return res

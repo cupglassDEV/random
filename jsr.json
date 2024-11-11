@@ -1,6 +1,6 @@
 {
  "name": "@cupglassdev/duckncup",
- "publish":{includes:["README.md", "Random.ts", "LICENSE"]},
+ "publish":{includes:["README.md", "Random.ts", "LICENSE", "LICENSE.original"]},
  "exports":{
   ".":"./Random.ts"
  },

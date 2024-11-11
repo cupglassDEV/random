@@ -30,7 +30,7 @@ export const lowerAlphaNumerics = `${lowerAlphabets}${numbers}`;
 /** The reversed POSITION (not reversed characters) for Alpha Numerics */
 export const reversedPosition:{
 alphaNumerics:`${typeof numbers}${typeof alphabets}`,
-upperAlphaNumberics:`${typeof numbers}${typeof tupperAlphabets}`,
+upperAlphaNumberics:`${typeof numbers}${typeof upperAlphabets}`,
 lowerAlphaNumberics:`${typeof numbers}${typeof lowerAlphabets}`
 } = {
     
